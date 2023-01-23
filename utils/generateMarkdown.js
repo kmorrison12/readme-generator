@@ -1,23 +1,44 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
+// function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {
-}
+// function licenseName (license) {
+//   switch (license) {
+//     case "MIT License":
+//       "MIT_License"
+//       break;
+//     case "Boost Software License":
+//       "Boost_Software_License"
+//       break;
+//     case "Eclipse Public License 2.0":
+//       "Eclipse_Public_License_2.0"
+//       break;
+//     case "GNU GPL v3.0":
+//       "GNU_GPL_v3.0"
+//       break;
+//     case "GNU AGPL v3.0":
+//       "GNU_AGPL_v3.0"
+//       break;
+//     case "Mozilla Public License 2.0":
+//       "Mozilla_Public_License_2.0"
+//       break;
+//     case "The Unlicense":
+//       "The_Unlicense"
+//       break;                 
+//   }
+// }
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-function renderLicenseLink(license) {}
+// function licenseBadge () {
+//   if (data.license === "No license") {
+//     return ``; 
+//   } else {
+//  return `![License](https://img.shields.io/badge/License-${data.license}-blue.svg)`
+//   }
+// }
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-function renderLicenseSection(license) {
-  return renderLicenseLink
-}
-
-// TODO: Create a function to generate markdown for README
+// function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
 
-  ![license](http://img.shields.io/badge/license-${data.license}-blue.svg
+  ![License](https://img.shields.io/badge/License-${data.license}-blue.svg)
 
   ## Description
   ${data.description}

@@ -29,7 +29,7 @@ const questions = [
         type: 'list',
         name: 'license',
         message: 'Select License Information.',
-        choices: ["MIT License", "Boost Software License", "Eclipse Public License 2.0", "GNU GPL v3.0", "GNU GPL v2.0", "GNU AGPL v3.0", "GNU GNU LGPL v2.1", "Mozilla Public License 2.0", "The Unlicense", "No license"]
+        choices: ["MIT_License", "Boost_Software_License", "Eclipse_Public_License_2.0", "GNU_GPL_v3.0", "GNU_AGPL_v3.0", "Mozilla_Public_License_2.0", "The_Unlicense", "No license"]
     },
     {
         type: 'input',
@@ -60,6 +60,7 @@ const writeFile = data => {
             console.log(err);
             return;
         } else {
+            console.log(" ")
             console.log("Your README has been generated!")
         }
     })}; 
